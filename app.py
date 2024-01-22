@@ -1,5 +1,4 @@
 from flask import Flask, request, jsonify
-import json, inspect
 
 app = Flask(__name__)
 
@@ -28,4 +27,4 @@ def send_signal():
     return jsonify({'status': 'success', 'message': 'Signal received successfully'})
 
 if __name__ == '__main__':
-    app.run(host='0.0.0.0', port = 80, debug=True)
+    app.run(debug=True)
